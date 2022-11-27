@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/line_title_detail"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/line_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.ukang.baiyu.widget.PagerSlidingTabStrip
+            android:id="@+id/tabs_detail"
+            android:layout_width="0dip"
+            android:layout_height="45dp"
+            android:layout_weight="9"
+            android:background="#fff5f5f5" />
+
+        <ImageButton
+            android:id="@+id/ib_show_grids"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="#fff5f5f5"
+            android:src="@drawable/open_android" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/content_pager_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line_tabs" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

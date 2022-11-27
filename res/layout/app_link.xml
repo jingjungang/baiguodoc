@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.ukang.d.activity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/white_color"
+    android:fitsSystemWindows="true">
+    <include
+	        android:id="@+id/line_title_detail"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        layout="@layout/common_title" />
+    <ScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:scrollbars="none"
+	    android:fadingEdge="none">
+	    <LinearLayout android:orientation="vertical" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	        <!-- 个人信息 -->
+	        <LinearLayout android:id="@+id/slide_title" android:background="@drawable/app_link_top" android:layout_width="fill_parent" android:layout_height="120dip" android:orientation="vertical" android:gravity="center">
+		        
+		        <TextView android:id="@+id/tv_user_name" android:text="Ukang Store App" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/white_text_style_18" android:textSize="24.0sp" android:layout_marginTop="8dip"/>
+		    </LinearLayout>
+		    <!-- items -->
+		    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="10dip" android:paddingBottom="10dip" android:paddingLeft="15dip" android:paddingRight="15dip">
+		    	<TextView android:text="应用推荐" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/black_16_style" android:textColor="@color/black_color" android:layout_centerVertical="true"/>
+		    	<ImageView android:id="@+id/iv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/science_more" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+		    	<TextView android:text="全部应用" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/iv_more" style="@style/gray_12_style" android:layout_marginRight="5dip" android:layout_centerVertical="true"/>
+		    </RelativeLayout>
+		    <com.ukang.baiyu.views.MyGridView
+			    android:id="@+id/grid_view"
+			    android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:background="@color/white_color"
+		        android:columnWidth="90dp"
+		        android:gravity="center"
+		        android:horizontalSpacing="10dp"
+		        android:numColumns="auto_fit"
+		        android:stretchMode="columnWidth"
+		        android:verticalSpacing="15dp" />
+	    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

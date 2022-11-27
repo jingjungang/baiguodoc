@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/line_title_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/article_title" />
+
+    <LinearLayout
+        android:id="@+id/line_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:background="@color/white_color" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/line_add_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/article_title_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="5dip" >
+
+            <EditText
+                android:id="@+id/et_comment"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edit_bg"
+                android:drawableLeft="@drawable/write_c"
+                android:drawablePadding="3dip"
+                android:maxLines="1" />
+
+            <ImageButton
+                android:id="@+id/btn_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/hands" />
+
+            <Button
+                android:id="@+id/btn_comment"
+                style="@style/white_text_style_14"
+                android:layout_width="wrap_content"
+                android:layout_height="34dip"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/but_bg_sel"
+                android:text="评论" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_color"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

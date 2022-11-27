@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <!-- 联系人item -->
+
+ <com.ukang.baiyu.views.CircularImage
+        android:id="@+id/iv_contact_thumb"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/tv_contact_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_color"
+            android:text="姓名：张三"
+            android:textSize="18.0sp" />
+        <TextView 
+            android:id="@+id/tv_contact_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别：男"/>
+        <TextView
+            android:id="@+id/tv_contact_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14.0sp" 
+            android:text="年龄：61"/>
+
+    </LinearLayout>
+
+</LinearLayout>

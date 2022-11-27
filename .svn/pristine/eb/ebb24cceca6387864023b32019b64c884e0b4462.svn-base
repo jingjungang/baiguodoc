@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/line_title_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_color" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <!-- 个人信息 -->
+
+            <LinearLayout
+                android:id="@+id/line_add_medchart"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dip"
+                android:paddingTop="15dip" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:background="@drawable/btn_add_press" />
+
+                    <TextView
+                        style="@style/black_16_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="创建病例" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <!-- <com.handmark.pulltorefresh.library.PullToRefreshListView -->
+                <!-- android:visibility="visible" -->
+                <!-- android:id="@+id/list_view" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:background="@null" -->
+                <!-- android:divider="@color/portail_line" -->
+                <!-- android:dividerHeight="1px" -->
+                <!-- android:fadingEdge="none" -->
+                <!-- android:overScrollMode="never" -->
+                <!-- android:scrollbars="none" -->
+                <!-- android_custom:ptrShowIndicator="false" > -->
+                <!-- </com.handmark.pulltorefresh.library.PullToRefreshListView> -->
+
+                <com.ukang.baiyu.views.PullToRefreshLayout
+                    android:id="@+id/refreshable_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <include layout="@layout/refresh_head" />
+
+                    <com.ukang.baiyu.views.PullableListView
+                        android:id="@+id/list_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:cacheColorHint="#00000000"
+                        android:divider="@color/portail_line"
+                        android:dividerHeight="1dip"
+                        android:layoutAnimation="@anim/list_controller"
+                        android:scrollbars="none" >
+                    </com.ukang.baiyu.views.PullableListView>
+
+                    <include layout="@layout/load_more" />
+                </com.ukang.baiyu.views.PullToRefreshLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

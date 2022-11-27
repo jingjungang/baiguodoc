@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.ukang.d.activity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/white_color"
+    android:fitsSystemWindows="true">
+    <include android:id="@+id/line_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/menu_title"
+         />
+    <ScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:scrollbars="none"
+	    android:fadingEdge="none">
+	    <LinearLayout android:orientation="vertical" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		    <!-- items -->
+		    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+		        <!-- 科研 -->
+		        <LinearLayout android:id="@+id/line_keyan" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="20dip" android:paddingBottom="20dip" android:background="@drawable/common_list_item_press" android:gravity="center_vertical">
+		            <LinearLayout android:layout_width="0dip" android:layout_weight="0.2" android:layout_height="wrap_content" android:gravity="center_vertical|right">
+		                <ImageView android:src="@drawable/nav_btn_04" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+		            </LinearLayout>
+		            <LinearLayout android:orientation="vertical" android:layout_width="0dip" android:layout_weight="0.6" android:layout_height="wrap_content" android:gravity="left|center_vertical">
+		                <TextView android:text="@string/keyan" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/black_14_style" android:layout_marginLeft="20dip"/>
+		            </LinearLayout>
+		            <LinearLayout android:orientation="vertical" android:layout_width="0dip" android:layout_weight="0.2" android:layout_height="wrap_content" android:gravity="center">
+		                <ImageView android:src="@drawable/science_more" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+		            </LinearLayout>
+		        </LinearLayout>
+		        <View android:layout_width="match_parent" android:layout_height="1dip" android:background="@color/portail_line"/>
+		        <!-- 我的收藏 -->
+		        <LinearLayout android:id="@+id/line_store" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="20dip" android:paddingBottom="20dip" android:background="@drawable/common_list_item_press" android:gravity="center_vertical">
+		            <LinearLayout android:layout_width="0dip" android:layout_weight="0.2" android:layout_height="wrap_content" android:gravity="center_vertical|right">
+		                <ImageView android:src="@drawable/nav_btn_01" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+		            </LinearLayout>
+		            <LinearLayout android:orientation="vertical" android:layout_width="0dip" android:layout_weight="0.6" android:layout_height="wrap_content" android:gravity="left|center_vertical">
+		                <TextView android:text="@string/my_store" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/black_14_style" android:layout_marginLeft="20dip"/>
+		            </LinearLayout>
+		            <LinearLayout android:orientation="vertical" android:layout_width="0dip" android:layout_weight="0.2" android:layout_height="wrap_content" android:gravity="center">
+		                <ImageView android:src="@drawable/science_more" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+		            </LinearLayout>
+		        </LinearLayout>
+		        <View android:layout_width="match_parent" android:layout_height="1dip" android:background="@color/portail_line"/>
+		        <!-- 我的评论 -->
+		        <LinearLayout android:id="@+id/line_comment" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="20dip" android:paddingBottom="20dip" android:background="@drawable/common_list_item_press" android:gravity="center_vertical">
+		            <LinearLayout android:layout_width="0dip" android:layout_weight="0.2" android:layout_height="wrap_content" android:gravity="center_vertical|right">
+		                <ImageView android:src="@drawable/nav_btn_02" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+		            </LinearLayout>
+		            <LinearLayout android:orientation="vertical" android:layout_width="0dip" android:layout_weight="0.6" android:layout_height="wrap_content" android:gravity="left|center_vertical">
+		                <TextView android:text="@string/my_cmt" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/black_14_style" android:layout_marginLeft="20dip"/>
+		            </LinearLayout>
+		            <LinearLayout android:orientation="vertical" android:layout_width="0dip" android:layout_weight="0.2" android:layout_height="wrap_content" android:gravity="center">
+		                <ImageView android:src="@drawable/science_more" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+		            </LinearLayout>
+		        </LinearLayout>
+		        <View android:layout_width="match_parent" android:layout_height="1dip" android:background="@color/portail_line"/>
+		        <!-- 我的检索记录 -->
+		        <LinearLayout android:id="@+id/line_search_his" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="20dip" android:paddingBottom="20dip" android:background="@drawable/common_list_item_press" android:gravity="center_vertical">
+		            <LinearLayout android:layout_width="0dip" android:layout_weight="0.2" android:layout_height="wrap_content" android:gravity="center_vertical|right">
+		                <ImageView android:src="@drawable/nav_btn_03" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+		            </LinearLayout>
+		            <LinearLayout android:orientation="vertical" android:layout_width="0dip" android:layout_weight="0.6" android:layout_height="wrap_content" android:gravity="left|center_vertical">
+		                <TextView android:text="@string/my_search_his" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/black_14_style" android:layout_marginLeft="20dip"/>
+		            </LinearLayout>
+		            <LinearLayout android:orientation="vertical" android:layout_width="0dip" android:layout_weight="0.2" android:layout_height="wrap_content" android:gravity="center">
+		                <ImageView android:src="@drawable/science_more" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+		            </LinearLayout>
+		        </LinearLayout>
+		        <View android:layout_width="match_parent" android:layout_height="1dip" android:background="@color/portail_line"/>
+		        <!-- 我的全文 -->
+		        <LinearLayout android:id="@+id/line_my_all_art" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="20dip" android:paddingBottom="20dip" android:background="@drawable/common_list_item_press" android:gravity="center_vertical">
+		            <LinearLayout android:layout_width="0dip" android:layout_weight="0.2" android:layout_height="wrap_content" android:gravity="center_vertical|right">
+		                <ImageView android:src="@drawable/nav_btn_04" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+		            </LinearLayout>
+		            <LinearLayout android:orientation="vertical" android:layout_width="0dip" android:layout_weight="0.6" android:layout_height="wrap_content" android:gravity="left|center_vertical">
+		                <TextView android:text="@string/my_all_article" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/black_14_style" android:layout_marginLeft="20dip"/>
+		            </LinearLayout>
+		            <LinearLayout android:orientation="vertical" android:layout_width="0dip" android:layout_weight="0.2" android:layout_height="wrap_content" android:gravity="center">
+		                <ImageView android:src="@drawable/science_more" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+		            </LinearLayout>
+		        </LinearLayout>
+		        <View android:layout_width="match_parent" android:layout_height="1dip" android:background="@color/portail_line"/>
+		        
+		    </LinearLayout>
+	    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">白果医生</string>
+    <string name="version_info">当前版本：1.1.0</string>
+    <string name="update_notice">温馨提示</string>
+    <string name="update_text">检测到新版本，是否更新？</string>
+    <string name="action_search">搜索</string>
+    <string name="register">注册</string>
+    <string name="register_account">注册账号</string>
+    <string name="guest_account">游客账号</string>
+    <string name="get_back_password">找回密码</string>
+    <string name="register_immi">立即注册</string>
+    <string name="tag">设置标签</string>
+    <string name="delTag">删除标签</string>
+    <string name="exit">退出</string>
+    <string name="back">返回</string>
+    <string name="username">用户名：</string>
+    <string name="password">密　码：</string>
+    <string name="login">登  录</string>
+    <string name="login_now">立即登录</string>
+    <string name="logout">退出登录</string>
+    <string name="storepassword">记住密码</string>
+    <string name="confirm">提交</string>
+    <string name="next_step">下一步</string>
+    <string name="audit_text">请审核我的工作</string>
+    <string name="viewpager">ViewPager</string>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="confirming">正在提交...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+    <!-- start -->
+    <string name="no_user">没有账号？用手机注册</string>
+    <string name="use_wifi">直接使用迈外迪免费WiFi！</string>
+    <string name="username_hint">账号</string>
+    <string name="account_hint">账号名称</string>
+    <string name="mobile_hint">请输入手机号</string>
+    <string name="mobile_yzm">验证码</string>
+    <string name="account_desc">由3-12位数字和字母（区分大小写）组成</string>
+    <string name="login_password_desc">至少六位字符</string>
+    <string name="login_password_hint">登录密码：至少六位字符</string>
+    <string name="yzm_hint">请输入验证码</string>
+    <string name="password_hint">密码</string>
+    <string name="set_password_hint">密码</string>
+    <string name="old_password_hint">请输入当前密码</string>
+    <string name="new_password_hint">请输入新密码</string>
+    <string name="re_password_hint">确认密码</string>
+    <string name="msg_hint">短信验证码</string>
+    <string name="get_verify">获取短信验证码</string>
+    <string name="verify_wrong">验证码错误</string>
+    <string name="agree_text">同意无线网络服务条款</string>
+    <string name="settings">设置</string>
+    <string name="search">搜索</string>
+    <string name="aboutus">关于我们</string>
+    <string name="push_notify">推送通知</string>
+    <string name="check_update">检查更新</string>
+    <string name="feed_back">意见反馈</string>
+    <string name="feed_back_req">问题反馈</string>
+    <string name="about_us">关于我们</string>
+    <string name="about">关于</string>
+    <string name="upload">上传</string>
+    <string name="download">下载</string>
+    <string name="start_camera_error">启动相机失败</string>
+    <string name="pic_limit_text">网络颠簸，建议单个附件大小不超过5M</string>
+    <string name="upload_pic">上传图片</string>
+    <string name="device_state_normal">正常运行</string>
+    <string name="device_state_15m">超过15分钟未运行</string>
+    <string name="device_state_1h">超过1小时未运行</string>
+    <string name="device_state_1day">超过1天未运行</string>
+    <string name="go_mydevice">查看我的设备</string>
+    <string name="device_no_pemission">此设备已被其它商户添加，没有权限查看此设备</string>
+    <string name="scan_txm">扫描条形码</string>
+    <string name="scan">扫一扫</string>
+    <string name="day_limit">只能查询最近30天的数据</string>
+    <string name="day_limit2">查询日期不能大于当天</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="enum_2">\u3000\u3000</string>
+    <string name="edit_user">用户信息修改</string>
+    <string name="edit_pwd">密码修改</string>
+    <string name="reload">重新加载</string>
+    <string name="no_net">联网失败，请重试</string>
+    <string name="appointment">预约</string>
+    <string name="sign">到店签到</string>
+    <string name="fault_fenxi">故障分析</string>
+    <string name="check_data">验收数据</string>
+    <string name="upload_img">上传图片</string>
+    <string name="leave_sign">离店签到</string>
+    <string name="confirm_success">提交成功</string>
+    <string name="confirm_fail">提交失败</string>
+    <string name="comment_success">评论成功</string>
+    <string name="zan_success">点赞成功</string>
+    <string name="zan_cancel_success">取消点赞成功</string>
+    <string name="store_success">收藏成功</string>
+    <string name="del_store_success">已取消收藏</string>
+    <string name="create_medchart">创建病例</string>
+    <string name="medchart_detail">病例详情</string>
+    <string name="center_tab_2">临床路径</string>
+    <string name="create_readpic">创建病例读片</string>
+    <string name="re_password">修改密码</string>
+    <string name="re_password_notice">请先修改密码</string>
+    <string name="modi_password">修改密码</string>
+
+    <!-- 图片浏览 -->
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="finish">完成</string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="photo">选择相册</string>
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinished">完成</string>
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+
+    <!-- ukang -->
+    <string name="tab_1">咨询</string>
+    <string name="tab_2">会议资讯</string>
+    <string name="tab_3">医学工具</string>
+    <string name="tab_4">我</string>
+    <string name="red_pic">读片</string>
+    <string name="database">数据库</string>
+    <string name="keyan">科研辅助</string>
+    <string name="app_vd">应用</string>
+    <string name="medchart">电子病历</string>
+    <string name="read_pic">病例读片</string>
+    <string name="path_way">临床路径</string>
+    <string name="consult_guide">诊疗指南</string>
+    <string name="my_store">我的收藏</string>
+    <string name="my_cmt">我的评论</string>
+    <string name="my_search_his">我的检索记录</string>
+    <string name="tool_bar">工具箱</string>
+    <string name="tools">医学工具</string>
+    <string name="patient_trans">患者事务</string>
+    <string name="science_art">学术科研</string>
+    <string name="persional_info">个人信息</string>
+    <string name="modi_persional_info">个人信息</string>
+    <string name="save">保存</string>
+    <string name="my_all_article">我的全文</string>
+    <string name="delete">删除</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="hcardnum">医&#160;&#160;院&#160;&#160;号</string>
+    <string name="bnum">病&#160;&#160;例&#160;&#160;号</string>
+    <string name="snum">科&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;室</string>
+    <string name="user_name">姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名</string>
+    <string name="sex">性&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;别</string>
+    <string name="znum">住&#160;&#160;院&#160;&#160;号</string>
+    <string name="ftime">发病时间</string>
+    <string name="btime">起始治疗时间</string>
+    <string name="zs">主&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;诉</string>
+    <!-- 友盟app_key -->
+    <string name="app_key">23015524</string>
+    <string name="umeng_appkey">5424dc93fd98c58ec20289da</string>
+    <string name="keshi_0">神经科</string>
+    <string name="keshi_1">我的科室</string>
+    <string name="card">就诊卡号</string>
+    <string name="rname">姓            名</string>
+    <string name="age">年        龄</string>
+    <string name="birthdate">出生日期</string>
+    <string name="phone">联系电话</string>
+    <string name="email">电子邮箱</string>
+    <string name="address">通讯地址</string>
+    <string name="birthday">身份证号</string>
+    <string name="height">身高</string>
+    <string name="weight">体重</string>
+    <string name="area">所在地区</string>
+    <string name="marriage">婚姻状况</string>
+    <string name="doc_type">医生类型：</string>
+    <string name="error_internet">网络连接失败</string>
+
+    <string-array name="doc_type_items">
+        <item>请选择职称</item>
+        <item>住院医师</item>
+        <item>主治医师</item>
+        <item>副主任医师</item>
+        <item>主任医师</item>
+    </string-array>
+
+</resources>

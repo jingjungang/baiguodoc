@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_color"
+    android:fitsSystemWindows="true" >
+
+    <com.ukang.baiyu.widget.NoScrollViewPager
+        android:id="@+id/tabmain_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white_color"
+        android:layout_weight="1" />
+
+    <com.ukang.baiyu.view.indicator.FixedIndicatorView
+        android:id="@+id/tabmain_indicator"
+        android:background="@color/white_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

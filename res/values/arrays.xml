@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="date">
+        <item>优衣库莲花广场店1</item>
+        <item>优衣库莲花广场店2</item>
+        <item>优衣库莲花广场店3</item>
+        <item>优衣库莲花广场店4</item>
+        <item>优衣库莲花广场店5</item>
+        <item>StarBucks</item>
+        <item>StarBucks2</item>
+        <item>才开口</item>
+        <item>深刻的快乐看</item>
+        <item>创新创效</item>
+        <item>问问</item>
+        <item>ABC</item>
+        <item>宣传册</item>
+        <item>未完全</item>
+        <item>没那么</item>
+        <item>A看看</item>
+        <item>看到快乐</item>
+        <item>问</item>
+        <item>场所啊</item>
+        <item>单位啊</item>
+        <item>方式啊</item>
+        <item>该撒网</item>
+        <item>很热</item>
+        <item>经典诵读</item>
+        <item>就哭了</item>
+        <item>可口可乐</item>
+        <item>渴望</item>
+        <item>啦啦啦</item>
+        <item>lop</item>
+        <item>MMS</item>
+        <item>模拟考多少</item>
+        <item>你问啊</item>
+        <item>欧佩克</item>
+        <item>哦皮卡</item>
+        <item>情况看来</item>
+        <item>BOBO</item>
+        <item>Jobs</item>
+        <item>动力火车</item>
+        <item>热舞阿斯顿</item>
+        <item>是滴是滴</item>
+        <item>特色店</item>
+        <item>玮思丹顿</item>
+        <item>下次再</item>
+        <item>一道伤口</item>
+        <item>再看看流量</item>
+        <item>~kl</item>
+        <item>132123</item>
+    </string-array>
+    
+    <string-array name="net_list">
+        <item>网络配置1</item>
+        <item>网络配置2</item>
+        <item>网络配置3</item>
+        <item>网络配置4</item>
+        <item>网络配置5</item>
+        <item>网络配置6</item>
+        <item>网络配置7</item>
+        <item>网络配置8</item>
+    </string-array>
+    
+    <string-array name="choose_task_date_list">
+        <item>30天内</item>
+        <item>60天内</item>
+        <item>半年内</item>
+        <item>一年内</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="signal_ganrao">
+        <item>无</item>
+        <item>弱</item>
+        <item>中</item>
+        <item>强</item>
+    </string-array>
+</resources>

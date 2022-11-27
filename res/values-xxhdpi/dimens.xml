@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+
+    <color name="gray">#858585</color>
+    <integer name="num_cols">1</integer>
+    <dimen name="swipe_right">50dp</dimen>
+    <dimen name="pie_legend">100dp</dimen>
+    <dimen name="side_text">18sp</dimen>
+</resources>

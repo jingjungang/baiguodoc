@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/search_title_color"
+        android:fitsSystemWindows="true"
+    	android:clipToPadding="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <AutoCompleteTextView
+            android:id="@+id/filter_edit"
+            style="@style/black_14_style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="7dip"
+            android:layout_weight="1"
+            android:background="@drawable/search_bar_edit_selector"
+            android:drawableLeft="@drawable/search_bar_icon_normal"
+            android:hint="Pubmed/药品/疾病名/方剂/中药"
+            android:singleLine="true"
+            android:textSize="15.0dip" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:text="@string/search"
+            android:textColor="@color/index_title_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <com.ukang.baiyu.view.pulltorefresh.library.PullToRefreshListView
+	    android:id="@+id/list_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:scrollbars="none"
+	    android:background="@null"
+	    android:divider="@color/portail_line"
+	    android:dividerHeight="1px" />
+</LinearLayout>

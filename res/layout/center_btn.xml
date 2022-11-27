@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_rg_menu"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="10dip"
+    android:paddingTop="10dip" >
+
+    <LinearLayout
+        android:id="@+id/line_btn_1"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="55dip"
+            android:layout_height="55dip"
+            android:background="@drawable/index_btn1_press"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            style="@style/black_14_style"
+            android:layout_marginTop="5dip"
+            android:text="@string/database" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="fill_parent"
+        android:background="@color/portail_line" />
+
+    <LinearLayout
+        android:id="@+id/line_btn_2"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="55dip"
+            android:layout_height="55dip"
+            android:background="@drawable/index_btn2_press"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            style="@style/black_14_style"
+            android:layout_marginTop="5dip"
+            android:text="@string/center_tab_2" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="fill_parent"
+        android:background="@color/portail_line" />
+
+    <LinearLayout
+        android:id="@+id/line_btn_3"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="55dip"
+            android:layout_height="55dip"
+            android:background="@drawable/index_btn3_press"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            style="@style/black_14_style"
+            android:layout_marginTop="5dip"
+            android:text="@string/red_pic" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="fill_parent"
+        android:background="@color/portail_line" />
+
+    <LinearLayout
+        android:id="@+id/line_btn_4"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="55dip"
+            android:layout_height="55dip"
+            android:background="@drawable/index_btn4_press"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            style="@style/black_14_style"
+            android:layout_marginTop="5dip"
+            android:text="@string/medchart" />
+    </LinearLayout>
+
+</LinearLayout>

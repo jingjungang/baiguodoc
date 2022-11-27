@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ukang.baiyu.views.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh_view"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+    <include layout="@layout/refresh_head" />
+    <!-- 支持所有实现Pullable接口的View -->
+    <com.ukang.baiyu.views.PullableLinearLayout
+        android:id="@+id/refreshable_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+		<LinearLayout android:orientation="vertical" android:focusable="true" android:id="@+id/line_banner" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		     <RelativeLayout android:background="@drawable/yunlogo" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		         
+		     </RelativeLayout>
+		    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingTop="5dip" android:paddingBottom="5dip">
+		        <ImageView android:background="@drawable/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dip" android:layout_marginRight="8dip"/>
+		    	<TextView android:text="" android:layout_width="wrap_content" android:layout_height="wrap_content" />t
+		    </LinearLayout>
+		</LinearLayout>
+		<ListView
+			android:id="@+id/list_view"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:scrollbars="none"
+		    android:background="@null" >
+		</ListView>
+    </com.ukang.baiyu.views.PullableLinearLayout>
+    
+    <include layout="@layout/load_more" />
+	
+</com.ukang.baiyu.views.PullToRefreshLayout>
+   

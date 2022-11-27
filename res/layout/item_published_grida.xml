@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:paddingTop="10dip" 
+    android:paddingBottom="10dip"
+     >
+
+    <ImageView
+        android:id="@+id/item_grida_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" >
+    </ImageView>
+	<ImageButton android:id="@+id/iv_del"
+	    android:background="@drawable/verify_wrong"
+	    android:contentDescription="@string/delete"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"/>
+</RelativeLayout>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/line_title_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/common_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <!-- 个人信息 -->
+
+            <LinearLayout
+                android:id="@+id/slide_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/persion_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="23dip"
+                android:paddingTop="23dip" >
+
+                <com.ukang.baiyu.views.RoundedImageView
+                    android:id="@+id/iv_cus_pic"
+                    android:layout_width="120dip"
+                    android:layout_height="120dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="5dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_man"
+                    android_custom:riv_border_color="@color/user_icon_border"
+                    android_custom:riv_border_width="1.5dip"
+                    android_custom:riv_corner_radius="60dip"
+                    android_custom:riv_oval="true" />
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    style="@style/white_text_style_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dip"
+                    android:text="KKCLKLALKDLS" />
+            </LinearLayout>
+            <!-- items -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/portail_line" />
+                <!-- 昵称： -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_list_item_press"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip" >
+
+                    <TextView
+                        style="@style/black_14_style"
+                        android:layout_width="60dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="昵  称：" />
+
+                    <EditText
+                        android:id="@+id/et_nickname"
+                        style="@style/gray_14_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="30dip"
+                        android:background="@drawable/gray_kuang"
+                        android:text="" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/portail_line" />
+                <!-- 性别 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_list_item_press"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip" >
+
+                    <TextView
+                        style="@style/black_14_style"
+                        android:layout_width="60dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="性别：" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/rb_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="男" />
+
+                        <RadioButton
+                            android:id="@+id/rb_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dip"
+                            android:text="女" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/portail_line" />
+                <!-- 生日 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_list_item_press"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip" >
+
+                    <TextView
+                        style="@style/black_14_style"
+                        android:layout_width="60dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="生  日：" />
+
+                    <TextView
+                        android:id="@+id/tv_birthday"
+                        style="@style/gray_14_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="30dip"
+                        android:background="@drawable/gray_kuang"
+                        android:text="" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/portail_line" />
+
+                <!-- 医院 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_list_item_press"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip" >
+
+                    <TextView
+                        style="@style/black_14_style"
+                        android:layout_width="60dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="医  院：" />
+
+                    <EditText
+                        android:id="@+id/et_hospital"
+                        style="@style/gray_14_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="30dip"
+                        android:background="@drawable/gray_kuang"
+                        android:text="" />
+                </LinearLayout>
+                <!-- 科 室 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_list_item_press"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip" >
+
+                    <TextView
+                        style="@style/black_14_style"
+                        android:layout_width="60dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="科 室：" />
+
+                    <EditText
+                        android:id="@+id/et_subject"
+                        style="@style/gray_14_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="30dip"
+                        android:background="@drawable/gray_kuang"
+                        android:text="" />
+                </LinearLayout>
+                <!-- 职 称 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_list_item_press"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip" >
+
+                    <TextView
+                        style="@style/black_14_style"
+                        android:layout_width="60dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="职 称：" />
+                    <Spinner
+                        android:id="@+id/spinner"
+                        style="@style/gray_14_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="30dip"
+                        android:background="@drawable/gray_kuang" />
+                </LinearLayout>
+
+                <!-- 手机号 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_list_item_press"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip" >
+
+                    <TextView
+                        style="@style/black_14_style"
+                        android:layout_width="60dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="手机号：" />
+
+                    <EditText
+                        android:id="@+id/et_phone"
+                        style="@style/gray_14_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="30dip"
+                        android:background="@drawable/gray_kuang"
+                        android:editable="false"
+                        android:text="" />
+                </LinearLayout>
+                <!-- 邮箱 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_list_item_press"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip" >
+
+                    <TextView
+                        style="@style/black_14_style"
+                        android:layout_width="60dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="邮  箱：" />
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        style="@style/gray_14_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="30dip"
+                        android:background="@drawable/gray_kuang"
+                        android:text="" />
+                </LinearLayout>
+                <!-- 学 历 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_list_item_press"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/black_14_style"
+                        android:layout_width="60dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="学 历：" />
+
+                    <EditText
+                        android:id="@+id/et_edu"
+                        style="@style/gray_14_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="30dip"
+                        android:background="@drawable/gray_kuang"
+                        android:text="" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/portail_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="35.0dip" >
+
+                    <Button
+                        android:id="@+id/btn_save"
+                        style="@style/white_text_style_16"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:background="@drawable/login_button"
+                        android:text="@string/save" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

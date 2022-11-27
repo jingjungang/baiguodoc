@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="@drawable/bg"
+  android:fitsSystemWindows="true"
+  android:clipToPadding="true">
+  	<include android:id="@+id/line_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/common_title"
+         />
+    <LinearLayout android:id="@+id/line_top" android:gravity="center" android:background="@null" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:src="@drawable/login_logo" android:contentDescription="@string/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35dip"/>
+    </LinearLayout>
+    <LinearLayout  android:id="@+id/line_center" android:orientation="vertical" android:layout_width="fill_parent"  android:layout_height="wrap_content" android:paddingTop="45dip" android:layout_marginLeft="30dip" android:layout_marginRight="30dip">
+<!-- 	    <TextView android:text="@string/re_password_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/white_text_style_16" android:layout_marginBottom="10dip" android:textColor="#ff9000"/> -->
+	    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+	        <EditText android:id="@+id/old_password" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="38dip" android:inputType="textPassword" android:hint="@string/old_password_hint" android:singleLine="true" style="@style/black_16_style"/>
+	    </LinearLayout>
+	    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15dip">
+	        <EditText android:id="@+id/password" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="38dip" android:inputType="textPassword" android:hint="@string/new_password_hint" android:singleLine="true" style="@style/black_16_style"/>
+	    </LinearLayout>
+	    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15dip">
+	        <EditText android:id="@+id/re_password" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="38dip" android:inputType="textPassword" android:hint="@string/re_password_hint" android:singleLine="true" style="@style/black_16_style"/>
+	    </LinearLayout>
+	    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+	        <Button android:background="@drawable/login_button" android:id="@+id/btn_login" android:layout_width="fill_parent" android:layout_height="38dip" android:text="@string/ok" style="@style/white_text_style_16"/>
+	    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

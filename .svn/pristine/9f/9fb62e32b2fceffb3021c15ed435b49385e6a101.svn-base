@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:fitsSystemWindows="true"
+    >
+    <include
+	        android:id="@+id/line_title_detail"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        layout="@layout/common_title" />
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="33dip"
+        android:background="@color/white_color">
+        <TextView android:id="@+id/tv_pathway"
+            android:text="@string/path_way"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            style="@style/black_16_style"
+            android:textColor="@color/index_title_color"
+            android:layout_height="match_parent"/>
+        <View android:layout_width="1dip" android:layout_height="match_parent" android:background="@color/portail_line"/>
+        <TextView android:id="@+id/tv_guide"
+            android:text="@string/consult_guide"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            style="@style/black_16_style"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <WebView android:id="@+id/web_view" 
+        android:layout_width="match_parent" 
+        android:layout_height="0dip"
+        android:background="@color/white_color"
+        android:layout_weight="1"
+        />
+</LinearLayout>

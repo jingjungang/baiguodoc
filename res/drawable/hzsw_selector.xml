@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/navi_patient_sel2x" android:state_selected="true"/>
+    <item android:drawable="@drawable/navi_patient_nor2x"/>
+
+</selector>

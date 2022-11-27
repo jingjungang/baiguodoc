@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/common_list_item_press"
+    android:paddingTop="15dip"
+    android:paddingBottom="15dip" >
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/tv_news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            style="@style/black_14_style" />
+        <TextView
+            android:id="@+id/tv_news_author"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/gray_14_style" />
+        <TextView
+            android:id="@+id/tv_news_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            style="@style/gray_14_style" />
+        <TextView
+            android:id="@+id/tv_news_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/gray_12_style" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linNewsPic"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="20dip"
+        android:orientation="vertical"
+        android:gravity="bottom|left" >
+
+        <Button android:id="@+id/btn_download"
+            android:text="@string/download"
+            android:layout_width="45dip" 
+            android:layout_height="27dip"
+            android:background="@drawable/download_border"
+            style="@style/black_12_style"
+            android:textColor="@color/index_title_color"/>
+    </LinearLayout>
+</LinearLayout>

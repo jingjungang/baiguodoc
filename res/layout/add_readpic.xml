@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:fitsSystemWindows="true">
+    <include
+	        android:id="@+id/line_title_detail"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        layout="@layout/common_title" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white_color" android:layout_width="fill_parent" android:layout_height="match_parent">
+	   	<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dip" android:layout_weight="1">
+	        <ScrollView 
+			    android:layout_width="fill_parent"
+			    android:layout_height="match_parent"
+			    android:background="@color/white_color"
+			    android:scrollbars="vertical"
+			    android:fadingEdge="none">
+		        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+			        <LinearLayout android:layout_width="match_parent" android:background="@color/label_bg" android:layout_height="wrap_content" android:paddingTop="10dip" android:paddingBottom="10dip" android:gravity="center_vertical">
+			            <TextView android:text="标题" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/black_16_style" android:layout_marginLeft="10dip"/>
+			        </LinearLayout>
+			        <!-- 标题-->
+			        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="5dip" android:gravity="center_vertical">
+			            <TextView android:text="标题：" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/black_14_style" android:layout_marginLeft="10dip"/>
+		                <EditText android:id="@+id/et_title" android:text="" android:layout_width="0dip" android:layout_weight="1" android:layout_height="wrap_content" style="@style/gray_14_style" android:layout_marginRight="10dip"/>
+			        </LinearLayout>
+			        <!-- 介绍-->
+			        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="5dip" android:gravity="center_vertical">
+			            <TextView android:text="介绍：" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/black_14_style" android:layout_marginLeft="10dip"/>
+		                <EditText android:id="@+id/et_desc" android:text="" android:layout_width="0dip" android:layout_weight="1" android:layout_height="wrap_content" style="@style/gray_14_style" android:layout_marginRight="10dip"/>
+			        </LinearLayout>
+			        
+			        <!-- 添加图片区域 -->
+			        <LinearLayout android:id="@+id/line_pic_area" android:layout_width="match_parent" android:layout_height="wrap_content">
+			            <!-- 首诊 -->
+				        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dip" android:layout_marginRight="15dip" android:layout_marginTop="15dip">
+				    		<LinearLayout android:background="@drawable/shape_blue_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingTop="10dip" android:paddingBottom="10dip" android:paddingLeft="15dip">
+				    		    <TextView android:text="病历图片" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/white_text_style_14"/>
+				    		</LinearLayout>
+				    		<LinearLayout android:orientation="horizontal" android:background="@color/white_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingTop="10dip" android:paddingBottom="10dip" android:paddingLeft="15dip">
+				    		    <TextView android:text="备注：" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/black_14_style"/>
+				    		    <TextView android:id="@+id/tv_first_desc" android:text="" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/black_14_style"/>
+				    		</LinearLayout>
+				    		<LinearLayout android:layout_width="fill_parent" android:layout_height="1dip" android:orientation="horizontal" android:background="@color/portail_line"/>
+				    		<LinearLayout android:orientation="horizontal" android:background="@color/white_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingTop="10dip" android:paddingBottom="10dip" android:paddingLeft="15dip">
+				    		    <com.ukang.baiyu.views.MyGridView android:id="@+id/first_grid_view"
+				    		        android:visibility="visible"
+				    		        android:layout_width="match_parent"
+							        android:layout_height="wrap_content"
+							        android:layout_marginLeft="5dp"
+							        android:horizontalSpacing="3dp"        
+							        android:numColumns="auto_fit"
+							        android:scrollbars="none"
+							        android:verticalSpacing="5dp"
+							        android:columnWidth="100dp">
+				    		        
+				    		    </com.ukang.baiyu.views.MyGridView>
+				    		</LinearLayout>
+				    	</LinearLayout>
+			        </LinearLayout>
+		    	</LinearLayout>
+	    	</ScrollView>
+	    </LinearLayout>
+        <LinearLayout android:id="@+id/line_add" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" android:layout_marginTop="10dip" android:layout_marginBottom="15dip">
+	        <TextView android:text="" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/black_16_style"/>
+	        <ImageButton android:id="@+id/ib_add" android:background="@drawable/add_medchart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dip"/>
+	    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

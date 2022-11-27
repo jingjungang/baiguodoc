@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="15dip"
+    android:paddingBottom="15dip"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip"
+    android:background="@drawable/common_list_item_press"
+    android:gravity="left|center_vertical" >
+    <TextView
+        android:id="@+id/tv_news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minLines="2"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/title_txt_color"
+        style="@style/black_16_style" />
+    <TextView
+        android:id="@+id/tv_news_time"
+        android:gravity="right"
+        android:textColor="#f96819"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/gray_12_style" />
+</LinearLayout>

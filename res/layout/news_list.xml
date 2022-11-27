@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- <include layout="@layout/refresh_head" /> -->
+    <!-- 支持所有实现Pullable接口的View -->
+
+    <com.ukang.baiyu.view.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:divider="@color/portail_line"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android_custom:ptrShowIndicator="false" >
+    </com.ukang.baiyu.view.pulltorefresh.library.PullToRefreshListView>
+
+    <!-- <include layout="@layout/load_more" /> -->
+
+</LinearLayout>
